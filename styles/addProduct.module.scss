@@ -1,0 +1,25 @@
+.Form_product label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    p {
+        margin-bottom: 5px;
+    }
+    input, select, textarea {
+        padding:3px 0;
+    }
+}
+.AddProduct {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.Product_price {
+    display: flex;
+    justify-content: space-between;
+    label {
+        width: 48%;
+        
+    }
+}

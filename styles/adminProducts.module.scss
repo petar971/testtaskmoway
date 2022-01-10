@@ -1,0 +1,53 @@
+.Admin_products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Admin_product {
+    margin-bottom: 10px;
+    border:1px solid #ccc;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    & > div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Admin_product_image {
+        width: 20%;
+        @media(min-width:768px){
+            width: 10%;
+        }   
+    }
+    .Admin_product_image img {
+        width: 100%;
+    }
+}
+
+.Add_product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+        border-radius: 10px;
+        margin-top:20px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        padding: 20px 0;
+        background-color: orange;
+        color:#fff;
+        border:none;
+        width:100%;
+        @media(min-width:768px){
+            width: 25%;
+        }
+    }
+}
+
+
+.Admin_orders > div {
+    padding: 10px;
+    cursor: pointer;
+}

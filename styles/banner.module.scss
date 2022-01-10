@@ -1,0 +1,31 @@
+.Banner {
+    margin:0 auto;
+    max-width: 1440px;
+    width: 100%;
+    margin-bottom: 30px;
+    @media(min-width:768px){
+    margin-bottom: 40px;
+
+    }
+    @media(min-width:1024px){
+        margin-bottom: 50px;
+    
+        }
+        @media(min-width:1440px){
+            margin-bottom: 70px;
+        
+            }
+}
+.Label_on_carousel {
+    padding: 10px 40px;
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    font-size: 36px;
+    background-color: rgba(255,255,255,0.5);
+    @media(min-width:1440px){
+        padding: 40px 150px;
+    }
+}

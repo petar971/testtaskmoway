@@ -1,0 +1,48 @@
+.Login_form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 120px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 16%);
+    border-radius: 10px;
+    @media(min-width:768px){
+        width: 400px;
+        margin:30px auto;
+    }
+}
+.Login_form > h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.Login_form > div {
+    display: flex;
+    flex-direction: column;
+    input {
+       padding: 10px 12px;
+       border-radius:10px;
+       border: 1px solid #777;
+       margin-bottom: 10px; 
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 0;
+        font-weight: 700;
+        color: #fff;
+        background-color: #fea712;
+        border:none;
+        border-radius: 10px;
+    }
+}
+
+.Register_form {
+    padding: 80px 20px;
+    & > div > input {
+        margin-bottom: 20px;
+    }
+
+}

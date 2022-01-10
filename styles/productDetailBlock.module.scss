@@ -1,0 +1,230 @@
+.Product {
+    button {
+        cursor: pointer;
+    }
+    padding-top: 10px;
+    margin-bottom: 30px;
+    @media(min-width:1024px){
+        display: flex;
+        justify-content: space-between;
+        & > div:nth-child(1) {
+            width: 40%;
+        }
+        & > div:nth-child(2){
+            width: 52%;
+        }
+    }
+    @media(min-width:1440px){
+
+        & > div:nth-child(1) {
+            width: 43%;
+        }
+        & > div:nth-child(2){
+            width: 52%;
+        }
+    }
+}
+
+.Carousel {
+    background-color: #fff;
+    @media(min-width:1024px){
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 3px 3px 10px rgba(0,0,0,.1607843137254902);
+border-radius: 10px;
+    }
+    & > div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
+.Product_content {
+    background-color: #fff;
+
+    padding:35px 16px;
+    box-shadow: 0 -4px 6px rgb(0 0 0 / 16%);
+    border-radius: 20px 20px 0 0;
+    @media(min-width:1024px){
+        box-shadow: 3px 3px 10px rgba(0,0,0,.1607843137254902);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.Product_title h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.Product_title p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.Carousel_image {
+    margin:0 auto;
+    width: 60%;
+    img {
+        width: 100%;
+    }
+    @media(min-width:768px){
+        width: 25%;
+    }
+    @media(min-width:1024px){
+        width: 100%;
+    }
+    @media(min-width:1440px){
+        width: 70%;
+    }
+    @media(min-width:1920px){
+        width: 45%;
+    }
+}
+.Product_description {
+    max-height: 150px;
+    overflow: hidden;
+    transition: .3s;
+    @media(min-width:1024px){
+    max-height: 250px;
+    overflow-y:scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    }
+}
+
+.Product_price {
+    margin-bottom: 10px;
+}
+.Product_price h3{
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 700;
+    span {
+    font-size: 18px;
+    line-height: 1;
+    vertical-align: super;
+    }
+}
+
+
+.Product_price h4 {
+    color: #b43030;
+    font-weight: 400;
+    position: relative;
+    width: fit-content;
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        right: 0;
+        height: 1px;
+        background: #b43030;
+    }
+span {
+    color: #b43030;
+    font-size: 10px;
+    vertical-align: super;
+}
+}
+
+
+.Products_buttons {
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: space-between;
+
+    & > button {
+        display: flex;
+-moz-box-align: center;
+align-items: center;
+-moz-box-pack: center;
+justify-content: center;
+outline: 0;
+border: none;
+height: 52px;
+padding: 0 23px;
+background:#fea712;
+border-radius: 10px;
+margin-right: 7px;
+width: 100%; 
+color: white;
+font-weight: 700;
+width: 40%;
+    }
+@media(min-width:1024px){
+    margin:0 auto;
+    position: relative;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16);
+    width: 100%;
+
+}
+@media(min-width:1440px){
+ 
+    width: 50%;
+
+}
+}
+
+.QuantityButton {
+    width: 50%;
+    display: flex;
+    button {
+        background-color: white;
+        border:none;
+        border-radius: 0;
+        font-size: 25px;
+        width: 30%;
+    }
+    div {
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        border:1px solid #ccc;
+        width: 40%;
+    }
+}
+
+
+.Product_open_description {
+    max-height: 5000px;
+    transition: .4s;
+}
+.ViewMore {
+    font-weight: 700;
+    @media(min-width:1024px){
+        display: none;
+    }
+}
+
+
+.Product_description::-webkit-scrollbar {
+    width: 1px;
+}
+ 
+.Product_description::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.Product_description::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}

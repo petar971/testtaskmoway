@@ -1,0 +1,125 @@
+.Category_header {
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    @media(min-width:768px){
+        font-size: 20px;
+
+    }
+    @media(min-width:1440px){
+        font-size: 26px;
+        margin-bottom: 30px;
+
+
+    }
+    }
+}
+.Category_block {
+
+    margin-bottom: 30px;
+}
+.Cat_image p {
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    @media(min-width:1024px){
+        font-size: 20px;
+        display:none;
+    }
+}
+.Cat_image {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5px;
+    width: 49%;
+    button {
+        overflow: hidden;
+        padding:0;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        
+        &:after{
+            content:"";
+            position: absolute;
+            top:0;
+            left:0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255,193,94,.7);
+            @media(min-width:1024px){
+            background-color: transparent;
+            transition: .3s;
+
+            }
+        }
+        &:hover:after{
+            @media(min-width:1024px){
+                transition: .3s;
+                background-color: rgba(255,193,94,.7);
+            }  
+        }
+        &:hover img{
+            @media(min-width:1024px){
+                transform: scale(1.2);
+                transition: .3s;
+            }  
+        }
+  
+    }
+
+    &:hover p{
+        @media(min-width:1024px){
+        font-size: 20px;
+         display:inline-block!important;
+        }  
+    }
+    img {
+        width: 100%;
+    }
+    @media(min-width: 768px){
+        width: 24%;
+    }
+}
+
+.Category_images {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+//#ffc15e main color
+
+
+.Products {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Product_wrap {
+    width: 49%;
+    
+    @media(min-width:768px){
+        width: 24%;
+    }
+ 
+    @media(min-width:1440px){
+        width: 16%;
+    }
+}
+
+.Product_car_wrap {
+    width: 96%;
+}
